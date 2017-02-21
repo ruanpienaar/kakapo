@@ -1,5 +1,5 @@
 # [kakapo](https://en.wikipedia.org/wiki/Kakapo)
-Erlang error_logger gen_event handler
+Erlang [error_logger](http://erlang.org/doc/man/error_logger.html) gen_event handler
 ```
                                 ________
                           _,-'''_...--- ``-._..-'''```-.._
