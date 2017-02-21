@@ -1,6 +1,6 @@
 # kakapo
 Erlang error_logger gen_event handler
-
+```
                                 ________
                           _,-'''_...--- ``-._..-'''```-.._
                        ,-'  '   _    --.  `,''   _...._   `.
@@ -27,4 +27,4 @@ Erlang error_logger gen_event handler
  (| ,|: { |(
   \/ :_,'`'
 
-
+```
