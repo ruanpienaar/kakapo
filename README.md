@@ -1,4 +1,4 @@
-# kakapo
+# [kakapo](https://en.wikipedia.org/wiki/Kakapo)
 Erlang error_logger gen_event handler
 ```
                                 ________
