@@ -40,5 +40,8 @@ start_error_logger_handlers([H|T], LogDir, LogFileSize, LogFileMax) ->
             start_error_logger_handlers(T, LogDir, LogFileSize, LogFileMax);
         kakapo_h ->
             ok = error_logger:add_report_handler(kakapo_h,[LogDir, LogFileSize, LogFileMax]),
-            start_error_logger_handlers(T, LogDir, LogFileSize, LogFileMax)
+            start_error_logger_handlers(T, LogDir, LogFileSize, LogFileMax);
+        H ->
+            ok = error_logger:add_report_handler(H, [LogDir, LogFileSize, LogFileMax]),
+            start_error_logger_handlers(T, LogDir, LogFileSize, LogFileMax) 
     end.
