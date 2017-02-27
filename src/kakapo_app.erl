@@ -17,9 +17,7 @@ start() ->
     application:start(kakapo).
 
 start(_StartType, _StartArgs) ->
-    Handlers = application:get_env(kakapo, event_handler, [kakapo]),
-    %% Just play around with error_logger
-    % ok = error_logger:add_report_handler(kakapo,{}),
+    Handlers = application:get_env(kakapo, event_handler, [kakapo_h]),
     LogDir = application:get_env(kakapo, log_dir, "log/"),
     LogFileSize = application:get_env(kakapo, log_file_size, 1 * 1024 * 1024),
     LogFileMax = application:get_env(kakapo, log_file_max, 10),
